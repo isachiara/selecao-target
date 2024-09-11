@@ -13,6 +13,7 @@ namespace TargetTest
 			SecondQuestion();
 			ThirdQuestion();
 			FourthQuestion();
+			FifthQuestion();
 		}
 		
 		public static void FirstQuestion()
@@ -39,7 +40,7 @@ namespace TargetTest
 		  
 		  Console.Write("Minor billing value: " + minorBillingValue + "\n");
 		  Console.Write("Max billing value: " + maxBillingValue + "\n");
-		  Console.Write("Days count upper average: " + daysUpperAverage);
+		  Console.Write("Days count upper average: " + daysUpperAverage + "\n");
 		}
 		
 		//Carrega a lista de faturamento dos 365 dias com valores aleatorios
@@ -81,6 +82,14 @@ namespace TargetTest
       .Append("WHERE s.code = 'SP')\n\n");
       
 		  Console.Write(sb.ToString());
+		}
+		
+		private static void FifthQuestion()
+		{
+		  string st = "Considerando que as duas cidades tem a mesma distância, podemos representar em uma linha no eixo X." +
+		  "Ao se cruzarem ambos estariam  na mesma posição com a mesma distância de Ribeirão. Porém ao se cruzarem o veículo" +
+		  "mais próximo de Ribeirão será o caminhão pois ele ser aproximaria mais da cidade enquanto o carro se afastaria";
+		  Console.Write(st);
 		}
 	}
 }
